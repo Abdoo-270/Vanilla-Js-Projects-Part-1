@@ -1,0 +1,82 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: #F1F5F8;
+}
+.container {
+    width: 90vw;
+    margin: 0 auto;
+    max-width: 40rem;
+    margin-top: 5rem;
+    text-align: center;
+}
+.container h3 {
+  font-family: Roboto, sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  color: #063251;
+  margin-top: 70px;
+  margin-bottom: 20px;
+  letter-spacing: 4px;
+}
+
+.container label {
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  color: #063251;
+}
+.container input {
+  font-size: 20px;
+  width: 50px;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+}
+.container button {
+  background: #49A6E9;
+  font-family: Arial;
+  font-size: 14px;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 5px;
+  letter-spacing: 2px;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: 0.5s;
+
+}
+.container button:hover {
+  background: #A5D5F8;
+  color: #49A6E9;
+}
+.container label{
+  letter-spacing: 4px;
+}
+.text-container p {
+  font-size: 16px;
+  color: #617D98;
+  line-height: 24px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+.note p {
+  margin-bottom: 30px;
+  margin-top: 15px;
+  color: grey;
+  font-family: "Open Sans", sans-serif;
+}
+.note u{
+  color: #49A6E9;
+  font-weight: bold;
+}
+
+@media screen and (max-width:500px) {
+  .container button {
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+}

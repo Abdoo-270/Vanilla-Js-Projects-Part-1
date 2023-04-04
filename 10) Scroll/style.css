@@ -1,0 +1,165 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+.banner {
+  background-image: linear-gradient(to Bottom , rgba(129,201,203,0.5), rgba(4, 9, 30, 0.7)),url(imgs/hero-bcg.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 110vh;
+
+}
+/*hidden navbar */
+#hidden-navbar {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  
+}
+.hidden-navbar{
+  display: flex;
+  justify-content: space-between;
+  padding: 4px 30px;
+  background-color:#fff;
+}
+.hidden-navbar img{
+  width: 60px;
+  padding-left: 20px;
+}
+.hidden-navbar .navbar-items {
+  list-style: none;
+  display: flex;
+}
+.hidden-navbar .navbar-items li a {
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  color: #102A42;
+  font-weight: 700;
+  letter-spacing: 3px;
+  transition: 0.5s;
+}
+.hidden-navbar .navbar-items li a:hover{
+  color: #40CFD4;
+}
+
+/* navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 40px;
+}
+.navbar img {
+  width: 60px;
+  padding-left: 20px;
+}
+.navbar-items {
+  list-style: none;
+  display: flex;
+}
+.navbar-items li {
+  margin: 20px;
+}
+.navbar-items li a {
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+.banner .banner-txt {
+  color: #fff;
+  margin-top: 150px;
+  text-align: center;
+
+}
+.banner-txt h1 {
+  font-family: Roboto, sans-serif;
+  font-size: 64px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.banner-txt p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom:25px;
+}
+.banner-txt button {
+  border: 2px solid #fff;
+  background: transparent;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 14px;
+  letter-spacing: 3px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.banner-txt button:hover {
+  background-color: #fff;
+  color : rgb(129,201,203);
+}
+.about,.tours {
+  background-color: #F1F5F8;
+  text-align: center;
+  height: 80vh;
+}
+.about h1,.services h1,.tours h1 {
+  font-size: 40px;
+  font-weight: 600;
+  font-family: Roboto, sans-serif;
+  letter-spacing: 3px;
+}
+.about h1 span,.services h1 span,.tours h1 span{
+    color : rgb(129,201,203);
+}
+.services {
+  background-color: #fff;
+  text-align: center;
+  height: 80vh;
+}
+.footer {
+  background-color: #102A42;
+  color: #fff;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  padding:100px 0;
+  font-size: 16px;
+  letter-spacing: 4px;
+  position: relative;
+}
+.footer a {
+
+  color: #fff;
+  position: absolute;
+  bottom: 20px;
+  right: 30px;
+  font-size: 25px;
+}
+
+@media screen and (max-width:650px) {
+  .navbar img {
+      display: none;
+    }
+        .navbar-items li {
+          margin: 10px;
+   }
+     .hidden-navbar img {
+       display: none;
+     }
+         .navbar-items li a {
+           font-size: 14px;
+           
+         }
+                 .hidden-navbar .navbar-items li a {
+                  font-size: 14px;
+                 }
+}

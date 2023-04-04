@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Food Menu of Restorant</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <h2>Our Menu</h2>
+  <ul class="header-buttons">
+    <button type="button" onclick="showAll()">
+      <li>All</li>
+    </button>
+    <button type="button" onclick="showBreakfast()">
+      <li>Breakfast</li>
+    </button>
+    <button type="button" onclick="showLunch()">
+      <li>Lunch</li>
+    </button>
+    <button type="button" onclick="showShakes()">
+      <li>Shakes</li>
+    </button>
+    <button type="button" onclick="showDinner()">
+      <li>Dinner</li>
+    </button>
+  </ul>
+    <div class="container menu-items">
+      <div class="all" id="all">
+        <div class="row">
+          <div class="col">
+            <div class="item">
+              <img src="img/item-10.jpeg" class="image">
+              <div class="text">
+                <div class="header-text">
+                  <h4>Buttermilk Pancakes</h4>
+                  <h4 class="price">$15.99</h4>
+                </div>
+                <div class="main-text">
+                  <p>I'm baby woke mlkshk wolf bitters live-edge blue bottle, hammock freegan copper mug whatever cold-pressed</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="item">
+              <img src="img/item-2.jpeg" class="image">
+              <div class="text">
+                <div class="header-text">
+                  <h4>Diner Double</h4>
+                  <h4 class="price">$13.99</h4>
+                </div>
+                <div class="main-text">
+                  <p>vaporware iPhone mumblecore selvage raw denim slow-carb leggings gochujang helvetica man braid jianbing. Marfa thundercats</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <div class="item">
+              <img src="img/item-6.jpeg" class="image">
+              <div class="text">
+                <div class="header-text">
+                  <h4>Godzilla Milkshake</h4>
+                  <h4 class="price">$6.99</h4>
+                </div>
+                <div class="main-text">
+                  <p>ombucha chillwave fanny pack 3 wolf moon street art photo booth before they sold out organic viral.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="item">
+              <img src="img/item-4.jpeg" class="image">
+              <div class="text">
+                <div class="header-text">
+                  <h4>Country Delight</h4>
+                  <h4 class="price">$20.99</h4>
+                </div>
+                <div class="main-text">
+                  <p>Shabby chic keffiyeh neutra snackwave pork belly shoreditch. Prism austin mlkshk truffaut,</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <div class="item">
+              <img src="img/item-5.jpeg" class="image">
+              <div class="text">
+                <div class="header-text">
+                  <h4>Egg Attack</h4>
+                  <h4 class="price">$22.99</h4>
+                </div>
+                <div class="main-text">
+                  <p>franzen vegan pabst bicycle rights kickstarter pinterest meditation farm-to-table 90's pop-up</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="item">
+              <img src="img/item-6.jpeg" class="image">
+              <div class="text">
+                <div class="header-text">
+                  <h4>Oreo Dream</h4>
+                  <h4 class="price">$18.99</h4>
+                </div>
+                <div class="main-text">
+                  <p>Portland chicharrones ethical edison bulb, palo santo craft beer chia heirloom iPhone everyday</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <div class="item">
+              <img src="img/item-7.jpeg" class="image">
+              <div class="text">
+                <div class="header-text">
+                  <h4>Bacon Overflow</h4>
+                  <h4 class="price">$8.99</h4>
+                </div>
+                <div class="main-text">
+                  <p>carry jianbing normcore freegan. Viral single-origin coffee live-edge, pork belly cloud bread iceland put a bird</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="item">
+              <img src="img/item-8.jpeg" class="image">
+              <div class="text">
+                <div class="header-text">
+                  <h4>American Classic</h4>
+                  <h4 class="price">$12.99</h4>
+                </div>
+                <div class="main-text">
+                  <p>on it tumblr kickstarter thundercats migas everyday carry squid palo santo leggings. Food truck truffaut</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <div class="item">
+              <img src="img/item-9.jpeg" class="image">
+              <div class="text">
+                <div class="header-text">
+                  <h4>Quarantine Buddy</h4>
+                  <h4 class="price">$15.99</h4>
+                </div>
+                <div class="main-text">
+                  <p>skateboard fam synth authentic semiotics. Live-edge lyft af, edison bulb yuccie crucifix microdosing.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="item">
+              <img src="img/item-10.jpeg" class="image">
+              <div class="text">
+                <div class="header-text">
+                  <h4>Steak Dinner</h4>
+                  <h4 class="price">$39.99</h4>
+                </div>
+                <div class="main-text">
+                  <p>skateboard fam synth authentic semiotics. Live-edge lyft af, edison bulb yuccie crucifix microdosing.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="breakfast" id="breakfast">
+      <div class="row">
+        <div class="col">
+          <div class="item">
+            <img src="img/item-9.jpeg" class="image">
+            <div class="text">
+              <div class="header-text">
+                <h4>Buttermilk Pancakes</h4>
+                <h4 class="price">$15.99</h4>
+              </div>
+              <div class="main-text">
+                <p>I'm baby woke mlkshk wolf bitters live-edge blue bottle, hammock freegan copper mug whatever cold-pressed</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="item">
+            <img src="img/item-1.jpeg" class="image">
+            <div class="text">
+              <div class="header-text">
+                <h4>Country Delight</h4>
+                <h4 class="price">$20.99</h4>
+              </div>
+              <div class="main-text">
+                <p>Shabby chic keffiyeh neutra snackwave pork belly shoreditch. Prism austin mlkshk truffaut,</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div class="item">
+            <img src="img/item-5.jpeg" class="image">
+            <div class="text">
+              <div class="header-text">
+                <h4>Bacon Overflow</h4>
+                <h4 class="price">$8.99</h4>
+              </div>
+              <div class="main-text">
+                <p>carry jianbing normcore freegan. Viral single-origin coffee live-edge, pork belly cloud bread iceland put a bird</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+
+      <div class="lunch" id="lunch">
+      <div class="row">
+        <div class="col">
+          <div class="item">
+            <img src="img/item-5.jpeg" class="image">
+            <div class="text">
+              <div class="header-text">
+                <h4>Diner Double</h4>
+                <h4 class="price">$15.99</h4>
+              </div>
+              <div class="main-text">
+                <p>vaporware iPhone mumblecore selvage raw denim slow-carb leggings gochujang helvetica man braid jianbing. Marfa thundercats</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="item">
+            <img src="img/item-2.jpeg" class="image">
+            <div class="text">
+              <div class="header-text">
+                <h4>Egg Attack</h4>
+                <h4 class="price">$22.99</h4>
+              </div>
+              <div class="main-text">
+                <p>franzen vegan pabst bicycle rights kickstarter pinterest meditation farm-to-table 90's pop-up</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div class="item">
+            <img src="img/item-6.jpeg" class="image">
+            <div class="text">
+              <div class="header-text">
+                <h4>American Classic</h4>
+                <h4 class="price">$12.99</h4>
+              </div>
+              <div class="main-text">
+                <p>on it tumblr kickstarter thundercats migas everyday carry squid palo santo leggings. Food truck truffaut</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+
+      <div class="shake" id="shake">
+      <div class="row">
+        <div class="col">
+          <div class="item">
+            <img src="img/item-4.jpeg" class="image">
+            <div class="text">
+              <div class="header-text">
+                <h4>Godzilla Milkshake</h4>
+                <h4 class="price">$6.99</h4>
+              </div>
+              <div class="main-text">
+                <p>ombucha chillwave fanny pack 3 wolf moon street art photo booth before they sold out organic viral.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="item">
+            <img src="img/item-6.jpeg" class="image">
+            <div class="text">
+              <div class="header-text">
+                <h4>Oreo Dreamr</h4>
+                <h4 class="price">$39.99</h4>
+              </div>
+              <div class="main-text">
+                <p>Portland chicharrones ethical edison bulb, palo santo craft beer chia heirloom iPhone everyday</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div class="item">
+            <img src="img/item-5.jpeg" class="image">
+            <div class="text">
+              <div class="header-text">
+                <h4>Quarantine Buddy</h4>
+                <h4 class="price">$15.99</h4>
+              </div>
+              <div class="main-text">
+                <p>skateboard fam synth authentic semiotics. Live-edge lyft af, edison bulb yuccie crucifix microdosing.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+
+      <div class="dinner" id="dinner">
+      <div class="row">
+        <div class="col">
+          <div class="item">
+            <img src="img/item-10.jpeg" class="image">
+            <div class="text">
+              <div class="header-text">
+                <h4>Quarantine Buddy</h4>
+                <h4 class="price">$15.99</h4>
+              </div>
+              <div class="main-text">
+                <p>skateboard fam synth authentic semiotics. Live-edge lyft af, edison bulb yuccie crucifix microdosing.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+
+</div>
+    <script src="app.js"> </script>
+</body>
+
+</html>

@@ -1,0 +1,120 @@
+
+body {
+  background-color: #F1F5F8;
+  font-family: "Open Sans", sans-serif;
+  padding: 0px ;
+  margin: 0px !important;
+  width: 100%;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  height: 50px;
+  box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+  flex-wrap: nowrap;
+  margin: 0 !important;
+  padding: 10px 100px;
+}
+#nav-links {
+  display: flex;
+  list-style: none;
+
+}
+
+#nav-links a{
+  margin: 0px 10px;
+  text-decoration: none;
+  color:#666;
+   font-size: 17px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 5px;
+  transition: 0.5s;
+}
+#nav-links a:hover {
+  color: #49A6E9 !important;
+
+}
+
+.logo img {
+  width: 200px;
+}
+
+.social-media-links {
+  color: #49A6E9 ;
+  display: flex;
+  flex-wrap: nowrap;
+}
+.social-media-links .fa-brands {
+  cursor: pointer;
+  font-size: 17px !important;
+  margin: 0px 10px;
+}
+#menu-icon {
+  position: absolute;
+  right: 20px;
+  color: #49A6E9 ;
+  font-size: 26px;
+  visibility:hidden;
+}
+#nav-collapse {
+  background-color: #fff;
+  margin: 0px 0px !important;
+  list-style: none;
+  padding-left: 20px !important;
+  box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+  position: fixed;
+  width: 100%;
+  top: -94px;
+  z-index: -1;
+  transition: 1s;
+
+}
+#nav-collapse li {
+  font-size: 18px;
+  font-weight: lighter;
+  color: #666;
+  letter-spacing: 3px;
+  padding: 10px;
+  margin: 0px !important;
+  cursor: pointer;
+  transition: 0.5s;
+}
+#nav-collapse li:hover {
+  color: #49A6E9;
+  background-color: #7bd3f7;
+  padding-left:25px;
+}
+
+
+
+
+@media only screen and (max-width: 1120px) {
+  .navbar {
+      padding: 10px 20px;
+  }
+}
+@media only screen and (max-width: 920px) {
+  .social-media-links {
+    visibility: hidden;
+  }
+  #nav-links {
+    visibility: hidden;
+  }
+  #menu-icon {
+    visibility: visible;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  #menu-icon:hover {
+    color: #000;
+    transform: rotate(90deg);
+  }
+}
+@media only screen and (min-width: 920px) {
+  #nav-collapse {
+      visibility: hidden;
+  }
+}
